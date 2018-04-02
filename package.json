@@ -1,0 +1,33 @@
+{
+  "name": "json-filter-cli",
+  "version": "1.0.0",
+  "description": "Filters JSON file",
+  "main": "index.js",
+  "bin": {
+    "json-filter": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "./index.js",
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "prestart": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Horat1us/json-filter-cli.git"
+  },
+  "author": "Alexander <horat1us>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Horat1us/json-filter-cli/issues"
+  },
+  "homepage": "https://github.com/Horat1us/json-filter-cli#readme",
+  "devDependencies": {
+    "@types/node": "^9.6.1",
+    "typescript": "^2.8.1"
+  },
+  "dependencies": {
+    "minimist": "^1.2.0"
+  }
+}
